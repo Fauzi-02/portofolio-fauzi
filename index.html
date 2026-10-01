@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Fauzi</title>
+    <!-- Kita pakai Tailwind CSS CDN agar langsung kelihatan keren dan rapi -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+
+    <!-- 1. Header & Navigasi -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-xl font-bold text-indigo-600">Fauzi</h1>
+                <p class="text-xs text-slate-500">Web Developer & Tech Enthusiast</p>
+            </div>
+            <nav>
+                <ul class="flex space-x-6 text-sm font-medium">
+                    <li><a href="#about" class="hover:text-indigo-600 transition">Tentang</a></li>
+                    <li><a href="#projects" class="hover:text-indigo-600 transition">Proyek</a></li>
+                    <li><a href="#skills" class="hover:text-indigo-600 transition">Keterampilan</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. Konten Utama -->
+    <main class="max-w-4xl mx-auto px-6 py-10 space-y-12">
+        
+    <!-- Bagian Hero / Perkenalan dengan Tombol Interaktif -->
+        <section class="bg-indigo-600 text-white rounded-2xl p-8 md:p-12 shadow-lg flex flex-col md:flex-row items-center justify-between">
+            <div class="space-y-4">
+                <span class="bg-indigo-500 text-xs uppercase tracking-wider px-3 py-1 rounded-full font-semibold">Halo, Dunia!</span>
+                <h2 class="text-3xl md:text-4xl font-bold">Saya Fauzi</h2>
+                <p class="text-indigo-100 max-w-lg">Sedang belajar membangun web yang interaktif, bersih, dan mudah diakses menggunakan standar HTML5 semantik.</p>
+                
+                <!-- Tombol Interaktif -->
+                <div>
+                    <button onclick="sapaPengunjung()" class="bg-white text-indigo-600 px-6 py-3 rounded-xl font-bold text-sm shadow-md hover:bg-indigo-50 transition">
+                        👋 Sapa Saya!
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Tentang Saya -->
+        <section id="about" class="bg-white rounded-2xl p-8 shadow-sm">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 border-b pb-2">Tentang Saya</h2>
+            <p class="text-slate-600">
+                Saya adalah seseorang yang memiliki ketertarikan besar di dunia teknologi dan pengembangan web. Melalui langkah-langkah kecil setiap hari, saya konsisten mempelajari cara merancang halaman web yang baik, mulai dari struktur semantik HTML hingga desain antarmuka yang menarik.
+            </p>
+        </section>
+
+        <!-- Bagian Proyek / Karya -->
+        <section id="projects" class="space-y-6">
+            <h2 class="text-2xl font-bold text-slate-900">Proyek Pilihan</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <article class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <h3 class="text-lg font-bold text-indigo-600 mb-2">Web Portofolio Pertama</h3>
+                    <p class="text-slate-600 text-sm">Halaman web portofolio pribadi yang dibuat menggunakan struktur HTML semantik yang bersih dan terstruktur.</p>
+                </article>
+
+                <article class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <h3 class="text-lg font-bold text-indigo-600 mb-2">Aplikasi Web Sederhana</h3>
+                    <p class="text-slate-600 text-sm">Eksperimen awal membuat fungsionalitas interaktif menggunakan dasar-dasar pemrograman web.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Bagian Keterampilan (Menggunakan aside/tambahan konteks) -->
+        <aside id="skills" class="bg-indigo-50 border border-indigo-100 rounded-2xl p-8">
+            <h3 class="text-xl font-bold text-indigo-900 mb-4">Keterampilan & Teknologi</h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-white text-indigo-700 px-4 py-2 rounded-lg text-sm font-medium shadow-xs">HTML5 Semantik</span>
+                <span class="bg-white text-indigo-700 px-4 py-2 rounded-lg text-sm font-medium shadow-xs">CSS Dasar</span>
+                <span class="bg-white text-indigo-700 px-4 py-2 rounded-lg text-sm font-medium shadow-xs">Tailwind CSS</span>
+                <span class="bg-white text-indigo-700 px-4 py-2 rounded-lg text-sm font-medium shadow-xs">JavaScript Pemula</span>
+            </div>
+        </aside>
+
+        <!-- Bagian Kontak -->
+        <section id="contact" class="bg-white rounded-2xl p-8 shadow-sm">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 border-b pb-2">Hubungi Saya</h2>
+            <p class="text-slate-600 mb-6">
+                Tertarik berdiskusi, bekerja sama, atau sekadar ingin berkenalan? Jangan ragu untuk menghubungi saya melalui tautan di bawah ini:
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="fauzidomili02@gmail.com" class="bg-indigo-600 text-white px-5 py-2.5 rounded-xl font-medium text-sm hover:bg-indigo-700 transition shadow-sm">
+                    Kirim Email
+                </a>
+                <a href="https://github.com" target="_blank" class="bg-slate-100 text-slate-700 px-5 py-2.5 rounded-xl font-medium text-sm hover:bg-slate-200 transition">
+                    GitHub
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="bg-slate-100 text-slate-700 px-5 py-2.5 rounded-xl font-medium text-sm hover:bg-slate-200 transition">
+                    LinkedIn
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 4. Footer / Penutup -->
+    <footer class="bg-white border-t mt-16 py-6 text-center text-sm text-slate-500">
+        <p>&copy; 2026 Fauzi. Dibuat dengan semangat belajar.</p>
+    </footer>
+
+    <!-- Script JavaScript Interaktif -->
+    <script>
+        function sapaPengunjung() {
+            alert("Halo! Terima kasih sudah mampir ke portofolio Fauzi. Semoga harimu menyenangkan! 🚀");
+        }
+    </script>
+
+</body>
+</html>
